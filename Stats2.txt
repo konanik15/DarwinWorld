@@ -1,0 +1,5 @@
+Oto statystyki mapy 2  dla : 263 epoki !
+Srednia ilosc zwierzat w tej symulacji : 2.0
+Srednia ilosc roslin w tej symulacji : 18.55513307984791
+Srednia ilosc energii w tej symulacji : 100847.30038022813
+Sredni wiek martwych zwierzat w tej symulacji : 0.0

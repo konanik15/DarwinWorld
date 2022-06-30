@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPanelSimulation" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="917.0" prefWidth="1296.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SimulationSceneController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#74ade3" height="284.0" layoutX="11.0" layoutY="613.0" stroke="BLACK" strokeType="INSIDE" width="1268.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#74ade3" height="103.0" layoutX="10.0" layoutY="8.0" stroke="BLACK" strokeType="INSIDE" width="1276.0" />
+      <Button fx:id="endSimulationAndSwitchButton" layoutX="15.0" layoutY="867.0" mnemonicParsing="false" onAction="#closeSimulation" prefHeight="25.0" prefWidth="191.0" text="Zakończ " />
+      <Label layoutX="40.0" layoutY="20.0" text="Parametry startowe : ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="72.0" text="Rozmiar mapy" />
+      <Label layoutX="170.0" layoutY="72.0" text="Ilość zwierząt" />
+      <Label layoutX="350.0" layoutY="72.0" text="Koszt ruchu" />
+      <Label layoutX="430.0" layoutY="72.0" text="Energia z rośliny" />
+      <Label layoutX="540.0" layoutY="72.0" text="Proporcje Dżungi" />
+      <Label fx:id="widthLabel" alignment="CENTER" layoutX="58.0" layoutY="46.0" prefHeight="17.0" prefWidth="28.0" text="Label" />
+      <Label fx:id="moveEnergyLabel" layoutX="365.0" layoutY="46.0" text="Label" />
+      <Label fx:id="plantEnergyLabel" layoutX="460.0" layoutY="46.0" text="Label" />
+      <Label fx:id="jugnleRatioLabel" layoutX="550.0" layoutY="46.0" text="Label" />
+      <Label fx:id="startAnimalsLabel" alignment="CENTER" layoutX="170.0" layoutY="46.0" prefHeight="17.0" prefWidth="76.0" text="Label" />
+      <Label fx:id="heightLabel" alignment="CENTER" layoutX="96.0" layoutY="46.0" prefHeight="17.0" prefWidth="28.0" text="Label" />
+      <Label layoutX="250.0" layoutY="72.0" prefHeight="17.0" prefWidth="92.0" text="Energia startowa" />
+      <Label fx:id="startEnergyLabel" alignment="CENTER" layoutX="255.0" layoutY="46.0" prefHeight="17.0" prefWidth="76.0" text="Label" />
+      <Button fx:id="startBothSimulationsButton" layoutX="666.0" layoutY="18.0" mnemonicParsing="false" onAction="#startBothSimulations" prefHeight="25.0" prefWidth="108.0" text="Generuj 2 mapy" />
+      <Button layoutX="777.0" layoutY="46.0" mnemonicParsing="false" onAction="#stop" prefHeight="25.0" prefWidth="111.0" text="Zatrzymaj i zablokuj 2 mapy" />
+      <Pane fx:id="pane1" layoutX="25.0" layoutY="115.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="594.0" AnchorPane.bottomAnchor="332.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="677.0" AnchorPane.topAnchor="115.0" />
+      <Pane fx:id="pane2" layoutX="653.0" layoutY="115.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="470.0" prefWidth="609.0" AnchorPane.bottomAnchor="332.0" AnchorPane.leftAnchor="653.0" AnchorPane.rightAnchor="34.0" AnchorPane.topAnchor="115.0" />
+      <Button layoutX="777.0" layoutY="18.0" mnemonicParsing="false" onAction="#start" prefHeight="25.0" prefWidth="111.0" text="Uruchom 2 mapy" />
+      <Label layoutX="70.0" layoutY="630.0" text="Liczba zwierząt" />
+      <Label layoutX="70.0" layoutY="660.0" text="Liczba roślin" />
+      <Label layoutX="70.0" layoutY="690.0" text="Dominujące genotypy" />
+      <Label layoutX="70.0" layoutY="720.0" text="Średni poziom energii dla żyjących zwierząt" />
+      <Label layoutX="70.0" layoutY="750.0" text="Średnia długość życia zwierząt dla martwych zwierząt" />
+      <Label layoutX="70.0" layoutY="780.0" text="Średnia liczba dzieci dla żyjących zwierząt." />
+      <Label layoutX="751.0" layoutY="630.0" text="Liczba zwierząt" />
+      <Label layoutX="750.0" layoutY="660.0" text="Liczba roślin" />
+      <Label layoutX="750.0" layoutY="690.0" text="Dominujące genotypy" />
+      <Label layoutX="750.0" layoutY="720.0" text="Średni poziom energii dla żyjących zwierząt" />
+      <Label layoutX="750.0" layoutY="750.0" text="Średnia długość życia zwierząt dla martwych zwierząt" />
+      <Label layoutX="750.0" layoutY="780.0" text="Średnia liczba dzieci dla żyjących zwierząt." />
+      <Label fx:id="amountOfPlants1" layoutX="180.0" layoutY="660.0" text="Label" />
+      <Label fx:id="dominantGenotype1" layoutX="199.0" layoutY="692.0" text="Label" />
+      <Label fx:id="averageLevelOfEnergy1" layoutX="310.0" layoutY="724.0" text="Label" />
+      <Label fx:id="averageLifespan1" layoutX="364.0" layoutY="753.0" text="Label" />
+      <Label fx:id="averageAmountOfKids1" layoutX="295.0" layoutY="784.0" text="Label" />
+      <Label fx:id="amountOfAnimals2" layoutX="842.0" layoutY="630.0" text="Label" />
+      <Label fx:id="amountOfPlants2" layoutX="842.0" layoutY="660.0" text="Label" />
+      <Label fx:id="dominantGenotype2" layoutX="876.0" layoutY="690.0" text="Label" />
+      <Label fx:id="averageLevelOfEnergy2" layoutX="1001.0" layoutY="714.0" text="Label" />
+      <Label fx:id="averageLifespan2" layoutX="1047.0" layoutY="746.0" text="Label" />
+      <Label fx:id="averageAmountOfKids2" layoutX="983.0" layoutY="778.0" text="Label" />
+      <Label fx:id="amountOfAnimals1" layoutX="180.0" layoutY="630.0" text="Label" />
+      <Button fx:id="buttonTurnOnMap1" layoutX="891.0" layoutY="18.0" mnemonicParsing="false" onAction="#turnOnMap1" prefHeight="25.0" prefWidth="111.0" text="Uruchom mape 1" />
+      <Button fx:id="buttonTurnOFFMap1" layoutX="891.0" layoutY="46.0" mnemonicParsing="false" onAction="#turnOffMap1" text="Zatrzymaj mape 1" />
+      <Button fx:id="buttonTurnOnMap2" layoutX="1005.0" layoutY="18.0" mnemonicParsing="false" onAction="#turnOnMap2" prefHeight="25.0" prefWidth="111.0" text="Uruchom mape 2" />
+      <Button fx:id="buttonTurnOffMap1" layoutX="1005.0" layoutY="46.0" mnemonicParsing="false" onAction="#turnOffMap2" text="Zatrzymaj mape 2" />
+      <Button layoutX="273.0" layoutY="867.0" mnemonicParsing="false" onAction="#generateStatsMap1" prefHeight="25.0" prefWidth="117.0" text="Generuj statystyki" />
+      <Button layoutX="924.0" layoutY="867.0" mnemonicParsing="false" onAction="#generateStatsMap2" text="Generuj statystyki " />
+      <Label layoutX="69.0" layoutY="613.0" text="Aktualna epoka" />
+      <Label layoutX="749.0" layoutY="613.0" text="Aktualna epoka" />
+      <Label fx:id="labelCurrentEraMap1" layoutX="180.0" layoutY="613.0" text="Label" />
+      <Label fx:id="labelCurrentEraMap2" layoutX="842.0" layoutY="613.0" text="Label" />
+   </children>
+</AnchorPane>
